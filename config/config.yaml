@@ -1,0 +1,22 @@
+app:
+  name: "wallet-api"
+  port: 8080
+
+database:
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "postgres"
+  name: "wallet_db"
+
+jwt:
+  secret: "your-secret-key"
+  expiration: 24 # hours
+  refresh_expiration: 168 # hours (1 week)
+
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+  db: 0
+  dashboard_port: 8081 # Port for the monitoring dashboard 
